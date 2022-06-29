@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+// 默认 黑
+@bg-DEFAULT: #000000d9;
+// 成功 绿
+@bg-SUCCESS: #20aa56;
+// 警告 橙
+@bg-WARNING: #faad14;
+// 失败 红
+@bg-ERROR: #ff4d4f;
+// 主要 蓝
+@bg-PRIMARY: #1890ff;
+// 过期 灰
+@bg-EXPIRED: #CCCCCC;
+
+// 边距
+@dis: 14px;
+
+.ion-focusable .on {
+  display: none;
+}
+
+.ion-focusable.tab-selected .on {
+  display: block;
+  color: @bg-SUCCESS;
+}
+
+.tab-selected {
+  .off {
+    display: none;
+  }
+
+  ion-label {
+    color: @bg-SUCCESS;
+  }
+}
+
+.pd-10 {
+  padding: 10px;
+}
